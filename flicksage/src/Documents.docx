@@ -1,0 +1,8 @@
+starting server : npx vite or npm run dev
+FlickSage is a cinematic-themed movie recommendation system built with React.js and Vite.
+It features a dynamic movie grid, genre-based filtering, and glowing neon-style visuals.
+The UI includes a red neon title effect, hover animations for movie posters, and smooth transitions. 
+Users can click on a movie to view its trailer and summary on a separate page. 
+API keys are securely managed via .env files. The project uses React Router for navigation and Axios 
+for fetching data from The Movie Database (TMDb) API.
+FlickSage delivers an immersive experience, blending sleek design with seamless functionality.

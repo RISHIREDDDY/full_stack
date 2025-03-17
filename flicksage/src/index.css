@@ -1,0 +1,89 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #000000, #1c1c1c);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Glowing title */
+h1 {
+  color: #6b0f13;
+  font-size: 3rem;
+  text-shadow: 0 0 5px #e50914, 0 0 10px #e50914, 0 0 20px #ff1a1a;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #e50914, 0 0 10px #e50914, 0 0 15px #ff1a1a;
+  }
+  to {
+    text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff3333, 0 0 30px #ff4d4d;
+  }
+}
+
+/* Genre buttons */
+.genre-selector {
+  margin-bottom: 1.5rem;
+}
+
+.genre-selector button {
+  background: #e50914;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.genre-selector button:hover {
+  background: #ff1a1a;
+}
+
+/* Movie grid */
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Movie card hover effect */
+.movie-card {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff1a1a, 0 0 40px #ff3333;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top: 5px solid #e50914;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
